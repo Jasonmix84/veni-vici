@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.whole-page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.middle-screen {
+  flex: 1;
+  /* your existing styles */
+}
+
+.ban-list-sidebar {
+  width: 260px;
+  margin-left: 32px;
+  background: #422e2e;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 18px 16px;
+  position: sticky;
+  top: 32px;
+  min-height: 200px;
+}
+
+.ban-group {
+  margin-bottom: 18px;
+}
+
+.ban-label {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ban-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ban-chip {
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 16px;
+  padding: 3px 12px;
+  font-size: 0.95em;
+  display: inline-block;
+}
+
+.ban-none {
+  color: #888;
+  font-size: 0.95em;
+}
