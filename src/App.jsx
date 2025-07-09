@@ -25,10 +25,8 @@ function App() {
 };
 
   const callAPI = async (query) => {
-    console.log(query)
     const response = await fetch(query);
     const json = await response.json();
-    console.log(json[0]);
     if (!json[0] || json[0].url == null || !json[0].breeds || !json[0].breeds[0]) {
       alert("Oops! Something went wrong with that query, let's try again!")
       return null;
